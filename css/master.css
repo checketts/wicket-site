@@ -3,10 +3,17 @@ html, body {
 	margin : 0;
 	padding : 0;
 	font-size : 14pt;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 700;
+}
+h2 {
+	font-size : 200%;
+}
+h3 {
+	color: #042E67;
+	font-size : 150%;
 }
 section, div {
 	margin : 0;
@@ -15,10 +22,57 @@ section, div {
 .container {
 	width : 1024px;
 	margin : 0 auto;
+	overflow:auto;
+}
+#hd {
+	width : 100%;
+	background-color: #042E67;
+	overflow: auto;
+	color : #FFF;
+}
+#bc {
+	width : 100%;
+	background-color: #638FCB;
+	border-top : 2px solid #85B1ED;
+	margin : 0;
+	padding : 1em 0;
+	overflow: auto;
+}
+#showcases ul {
+	margin : 0;
+	padding : 0;
+	list-style: none;
+}
+#showcases li {
+	display : none;
+}
+#showcases li.showing {
+	display: block;
+}
+#bd {
+	overflow:auto;
+}
+#bd h2, #bd h3, #bd p {
+	margin : 0;padding:0;
+}
+#bd h2 {
+	color : #F15918;
+	line-height : 2em;	
+}
+#bd h3 {
+	line-height : 1.5em;
+	padding-top : 0.5em;
+}
+
+#features div.feature {
+	float : left;
+	width : 20%;
+	padding-right:5%;
 }
 #ft {
 	width : 100%;
 	background-color: #638FCB;
+	border-top : 2px solid #85B1ED;
 	margin : 0;
 	padding : 1em 0;
 	overflow: auto;
