@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' />
+	<title>Apache Wicket</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="Apache Wicket CSS" charset="utf-8" />
+</head>
+<body class="front">
+	<section id="hd">
+		<div class="container">
+			<h1>Apache Wicket</h1>
+			<h2>The component oriented, open source, Java web framework.</h2>
+			<p>With proper mark-up/logic separation, a POJO data model, and a refreshing lack of XML, <strong>Apache Wicket</strong> makes developing web-apps simple and enjoyable again.</p>
+			<p>Learn more about <a href="learn">Apache Wicket</a> and the <a href="http://www.apache.org">Apache Software Foundation</a>
+			<menu>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="blog">Blog</a></li>
+				<li><a href="download">Download</a></li>
+				<li><a href="help">Help</a></li>
+			</menu>
+		</div>
+	</section>
+	<section id="bc">
+		<div class="container">
+			<div id="downloadbox">
+				<a href="download"><img src="download.svg" title="Download 1.4.15" alt="Download" width="100px" height="100px"  /></a>
+				<h2>Download 1.4.15</h2>
+				<p>The latest version, includes all sub projects, examples and complete source. <a href="download">Download here.</a></p>
+			</div>
+			<div id="showcases">
+				<h2>Apache Wicket powered sites</h2>
+				<ul class="showcases">
+					<li class="showing"><a href="showcases/eropuit.nl.html"><img src="showcases/eropuit.nl.jpg" width="320px" height="213px" alt="eropuit.nl" title="Showcase: eropuit.nl"></a></li>
+					<li><a href="showcases/mexico.com.html"><img src="showcases/mexico.com.jpg" width="320px" height="213px" alt="mexico.com" title="Showcase: mexico.com"></a></li>
+					<li><a href="showcases/ties.com.html"><img   src="showcases/ties.com.jpg"   width="320px" height="213px" alt="ties.com"   title="Showcase: ties.com"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="bd">
+		<div class="container">
+			<article id="introduction">
+				<h2>Introducing Apache Wicket</h2>
+				<p>Apache Wicket is a Java based, open source, component oriented web application framework. Instead of writing request/response handlers you create reusable components using HTML and Java.</p>
+				<h3>Plain HTML markup</h3>
+				<p>Using plain HTML markup—extended with specific Wicket markers—you create rich web pages without having to learn a new tag language. Use the language of your web designers.</p>
+				<pre>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello, World!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 wicket:id=&rdquo;text&rdquo;&gt;replace me&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				<h3>Plain Java coding</h3>
+				<p>Coding is done in plain old Java. No XML programming, no annotation hunting.</p>
+				<pre>package com.mycompany.app;
+
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+
+public class HelloWorld extends WebPage {
+   public HelloWorld() {
+       add(new Label("message", "Hello World!"));
+   }
+}</pre>
+			</article>
+			<section id="blog">
+				<h2>Official blog</h2>
+				<article class="blogitem">
+					<h3>Apache Wicket 1.4.15 released</h3>
+					<date>2010-12-15</date>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus ante, tempor egestas facilisis in, commodo tempor dolor. Curabitur ut sollicitudin massa. Curabitur massa felis, pharetra et scelerisque ac, feugiat a diam.</p>
+				</article>
+				<article class="blogitem">
+					<h3>Wicket Stuff core 1.4.13 released</h3>
+					<date>2010-11-13</date>
+					<p>Proin ullamcorper diam ac urna laoreet tincidunt tempor lorem facilisis. Sed faucibus ornare consectetur. Quisque facilisis sollicitudin orci, id mollis elit eleifend vel. Nunc semper felis vel leo pharetra in pretium orci egestas. Ut posuere lacus in libero dignissim egestas. (<a href="#">read more...</a>)</p>
+				</article>
+			</section>
+			<section id="buzz">
+				<h2>What Wicket users say</h2>
+				<article class="buzzitem">
+					<h3>vegas.com introduces mexico.com</h3>
+					<p>... We at Vegas.com have been able to re-purpose our Wicket-based air/hotel search application and purchase/checkout application. This is the new mexico.com. [...] The re-use of components and abstract pages was tremendous.</p>
+					<p class="attribution">Scott Swank, senior engineer vegas.com</p>
+				</article>
+				<article class="buzzitem">
+					<h3>Norton uses wicket in their online store</h3>
+					<p>The following mega site http://buy.norton.com was developed using Apache Wicket. [...] Wicket is an awesome framework, it has his quirks but makes code development fast. The websites developed are blazingly fast.</p>
+					<p class="attribution">Sanjoy Ghosh, norton.com</p>
+				</article>
+				<article class="buzzitem">
+					<h3>Walmart's mobile website is Wicket based</h3>
+					<p>The question if Wicket is suitable for large enterprises has just become easier to answer: The largest enterprise in the world is now using Wicket for its mobile site. Check out <a href="#">http://mobile.walmart.com</a></p>
+					<p class="attribution">Joachim F. Kainz, jolira.com</p>
+				</article>
+			</section>
+		</div>
+	</section>
+	<section id="ft">
+		<div class="container">
+			<div class="linklist">
+				<h3>Meet Wicket</h3>
+				<ul>
+					<li><a href="#">Introduction</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Wicket Buzz</a></li>
+					<li><a href="#">Vision</a></li>
+					<li><a href="#">Blogs</a></li>
+				</ul>
+			</div>
+			<div class="linklist">
+				<h3>Get started</h3>
+				<ul>
+					<li><a href="#">Download Wicket</a></li>
+					<li><a href="#">Quickstart</a></li>
+					<li><a href="#">More archetypes</a></li>
+				</ul>
+			</div>
+			<div class="linklist">
+				<h3>Learn more</h3>
+				<ul>
+					<li><a href="#">Examples</a></li>
+					<li><a href="#">Components</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Wiki</a></li>
+					<li><a href="#">Reference guide</a></li>
+					<li><a href="#">Books</a></li>
+					<li><a href="#">IDE plugins</a></li>
+				</ul>
+			</div>
+			<div class="linklist">
+				<h3>Get help</h3>
+				<ul>
+					<li><a href="#">Ask a question</a></li>
+					<li><a href="#">Report a bug</a></li>
+					<li><a href="#">Security issues</a></li>
+					<li><a href="#">Commercial support</a></li>
+				</ul>
+			</div>
+			<div class="linklist">
+				<h3>Contribute</h3>
+				<ul>
+					<li><a href="#">Writing docs</a></li>
+					<li><a href="#">Build Wicket</a></li>
+					<li><a href="#">Provide a patch</a></li>
+					<li><a href="#">Release Wicket</a></li>
+					<li><a href="#">Fisheye</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
