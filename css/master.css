@@ -22,7 +22,7 @@ section, div {
 .container {
 	width : 1024px;
 	margin : 0 auto;
-	overflow:auto;
+	overflow: auto;;
 }
 #hd {
 	width : 100%;
@@ -63,13 +63,15 @@ section, div {
 	line-height : 1.5em;
 	padding-top : 0.5em;
 }
-
 #features div.feature {
 	float : left;
 	width : 20%;
 	padding-right:5%;
 }
-
+#bd section {
+	float : left;
+	width : 50%;
+}
 #ft {
 	width : 100%;
 	background-color: #638FCB;

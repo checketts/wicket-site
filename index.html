@@ -80,32 +80,6 @@
 			</article>
 		</div>
 		<div class="container">
-			<article id="introduction">
-				<h2>Introducing Apache Wicket</h2>
-				<p>Apache Wicket is a Java based, open source, component oriented web application framework. Instead of writing request/response handlers you create reusable components using HTML and Java.</p>
-				<h3>Plain HTML markup</h3>
-				<p>Using plain HTML markup—extended with specific Wicket markers—you create rich web pages without having to learn a new tag language. Use the language of your web designers.</p>
-				<pre>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Hello, World!&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1 wicket:id=&rdquo;text&rdquo;&gt;replace me&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-				<h3>Plain Java coding</h3>
-				<p>Coding is done in plain old Java. No XML programming, no annotation hunting.</p>
-				<pre>package com.mycompany.app;
-
-import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
-
-public class HelloWorld extends WebPage {
-   public HelloWorld() {
-       add(new Label("message", "Hello World!"));
-   }
-}</pre>
-			</article>
 			<section id="blog">
 				<h2>Official blog</h2>
 				<article class="blogitem">
