@@ -2,6 +2,11 @@ html, body {
 	width : 100%;
 	margin : 0;
 	padding : 0;
+	font-size : 14pt;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
 }
 section, div {
 	margin : 0;
@@ -15,11 +20,26 @@ section, div {
 	width : 100%;
 	background-color: #638FCB;
 	margin : 0;
-	padding : 0;
+	padding : 1em 0;
 	overflow: auto;
 }
 #ft div.linklist {
 	float : left;
 	width : 19%;
 	padding-right : 1%;
+}
+#ft div.linklist h3 {
+	color : #FFF;
+	margin : 0;
+	padding : 0;
+}
+#ft div.linklist ul {
+	list-style : none;
+	margin : 0;
+	padding :0;
+}
+#ft a, #ft a:visited, #ft a:hover, #ft a:active {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color : #042E67;
+	text-decoration : none;
 }
