@@ -1,0 +1,25 @@
+html, body {
+	width : 100%;
+	margin : 0;
+	padding : 0;
+}
+section, div {
+	margin : 0;
+	padding : 0;
+}
+.container {
+	width : 1024px;
+	margin : 0 auto;
+}
+#ft {
+	width : 100%;
+	background-color: #638FCB;
+	margin : 0;
+	padding : 0;
+	overflow: auto;
+}
+#ft div.linklist {
+	float : left;
+	width : 19%;
+	padding-right : 1%;
+}
