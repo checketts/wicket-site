@@ -75,7 +75,7 @@ section, div {
 	background-color: #638FCB;
 	border-top : 2px solid #85B1ED;
 	margin : 1em 0 0 0;
-	padding : 1em 0 0 0;
+	padding : 1em 0;
 	overflow: auto;
 }
 #ft div.linklist {
